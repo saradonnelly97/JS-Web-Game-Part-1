@@ -15,15 +15,11 @@ newImage('assets/pillar.png', 350, 100)
 newImage('assets/crate.png', 150, 200)
 newImage('assets/well.png', 500, 425)
 
-let sword = document.createElement('img')
-sword.src = 'assets/sword.png'
-sword.position = 'fixed'
-sword.left = '500px'
-sword.bottom = '405px'
-document.body.append(sword)
+function newItem(url, left, bottom) {
+    let object = newImage(url, left, bottom)
+    object.addEventListener('dblclick', () => {
+        object.remove()
+    })
+}
 
-sword.addEventListener('click', function(){
-    sword.remove()
-})
-
-newImage('assets/sword.png', 500, 405)
+newItem('assets/sword.png', 500, 405)
