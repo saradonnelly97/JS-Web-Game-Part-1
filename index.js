@@ -25,3 +25,5 @@ function newItem(url, left, bottom) {
 newItem('assets/staff.png', 165, 185)
 newItem('assets/shield.png', 600, 100)
 newItem('assets/sword.png', 500, 405)
+
+//Will be updating the assets and changing them soon
