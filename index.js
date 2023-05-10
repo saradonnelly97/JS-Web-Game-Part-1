@@ -1,3 +1,14 @@
+function newImage(url, left, bottom) {
+    let image = document.createElement('img')
+    image.src = 'assets/green-character.gif'
+    image.style.position = 'fixed'
+    image.style.left = '100px'
+    image.style.bottom = '100px'
+    document.body.append(image)
+    return image
+}
+
+
 let greenCharacter = document.createElement('img')
 greenCharacter.src = 'assets/green-character.gif'
 greenCharacter.style.position = 'fixed'
@@ -11,3 +22,5 @@ pineTree.style.position = 'fixed'
 pineTree.style.left = '450px'
 pineTree.style.bottom = '200px'
 document.body.append(pineTree)
+
+
